@@ -120,6 +120,9 @@ val isEmpty: Boolean
     get() = this.size == 0
 ```
 
+Note here that `isEmpty` being a `val` doesn't generate a setter and the custom getter here doesn't reference the `field` identifier.
+
+
 ### Backing Properties
 
 If you want to do something that does not fit into this "implicit backing field" scheme, you can always fall back to having a *backing property*:
